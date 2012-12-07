@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<constants>
+  <constant name="ACTION_NOTHING" value="0"/>
+  <constant name="ACTION_SELECT_UNITS" value="1"/>
+  <constant name="UNIT_FLAG_DRAWSELECT" value="1"/>
+  <constant name="STATUS_IDLE" value="0"/>
+  <constant name="STATUS_MOVING" value="1"/>
+  <constant name="STATUS_ATTACKING" value="2"/>
+  <constant name="STATUS_ATTACK_MOVE" value="3"/>
+  <constant name="PLAYER_NEUTRAL" value="0"/>
+  <constant name="PLAYER_1" value="1"/>
+  <constant name="PLAYER_2" value="2"/>
+  <constant name="PLAYER_3" value="3"/>
+  <constant name="PLAYER_4" value="4"/>
+</constants>

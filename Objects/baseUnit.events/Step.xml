@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">
+// If unit belongs to player
+//if(owner == PLAYER_1)
+//{
+    if(status == STATUS_MOVING)
+    {
+        // Has not yet reached destination
+        if(x != gotoX || y != gotoY)
+        {
+            if(!isMoving) isMoving = true;
+            mp_potential_step(gotoX, gotoY, moveSpeed, false);
+        
+            imageStep += stepSpeed;
+            while(imageStep &gt;= stepCount)
+            {
+              imageStep -= stepCount;
+            }
+        }
+        else        // reached destination
+        {
+            // Stop moving
+            isMoving = false;
+            imageStep = 0;
+            // Randomly rotate directions while idle (for visual appeal only)
+            if(random(100) &lt; 3)
+                direction += 10-random(20);
+            if(direction &gt; 360 || direction &lt; 0)
+            direction = 0;
+        }
+    }
+    else if(status == STATUS_IDLE || status == STATUS_ATTACKING)
+    {
+        if(findTargetEnemy())
+        {
+            status = STATUS_ATTACKING;
+            direction = point_direction(x,y,targetEnemy.x,targetEnemy.y);
+        }
+        else
+            status = STATUS_IDLE;
+    }
+//}
+
+// Got stuck in another solid object
+if(!place_free(x,y))
+{
+    var newDirection, newDistance;
+    newDirection = 360;
+    newDistance = 30;
+    if(place_free(lengthdir_x(newDirection,newDistance),lengthdir_y(newDirection,newDistance)))
+    {
+        move_outside_solid(random(newDirection),newDistance);
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

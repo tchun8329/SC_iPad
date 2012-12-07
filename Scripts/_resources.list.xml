@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="moveTo" type="RESOURCE"/>
+  <resource name="selectUnits" type="RESOURCE"/>
+  <resource name="findTargetEnemy" type="RESOURCE"/>
+  <resource name="loadGridFromFile" type="RESOURCE"/>
+  <resource name="collisionLineMapGrid" type="RESOURCE"/>
+</resources>
