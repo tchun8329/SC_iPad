@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="objZergling" type="RESOURCE"/>
-  <resource name="objMarine" type="RESOURCE"/>
-  <resource name="baseUnit" type="RESOURCE"/>
-  <resource name="objControl" type="RESOURCE"/>
-  <resource name="objWall" type="RESOURCE"/>
-  <resource name="basePlayer1" type="RESOURCE"/>
-</resources>
