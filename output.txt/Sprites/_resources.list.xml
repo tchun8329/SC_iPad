@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<resources>
-  <resource name="sprGloob" type="RESOURCE"/>
-  <resource name="Units" type="GROUP"/>
-  <resource name="sprGhost" type="RESOURCE"/>
-  <resource name="objWall" type="RESOURCE"/>
-  <resource name="sprCursor" type="RESOURCE"/>
-  <resource name="sprVision" type="RESOURCE"/>
-</resources>
