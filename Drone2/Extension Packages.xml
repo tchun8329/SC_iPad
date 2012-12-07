@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extensionPackages>
+  <package>ClipCursor DLL</package>
+  <package>GM Motion Planning</package>
+  <package>GM Printing</package>
+  <package>GM Room Transitions</package>
+  <package>GM Windows Dialogs</package>
+</extensionPackages>

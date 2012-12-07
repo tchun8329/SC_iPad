@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed = 0;
+imageStep = 0;
+stepCount = 5;
+pathPos = -1;
+stepSpeed = 0.333;
+gotoX = x;
+gotoY = y;
+myPath = path_add();
+owner = PLAYER_NEUTRAL;
+isMoving = false;
+height = 0;
+addImage = 0;
+status = STATUS_IDLE;
+myHealth = 10;
+chaseDistance = 40;
+LOS = 150;
+aggroRange = 130;
+targetEnemy = noone;
+
+direction = random(360);
+alarm[2] = 100;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

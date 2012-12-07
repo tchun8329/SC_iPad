@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// Recalculate a new path if there is a wall in the way
+/*
+if(pathPos &gt;= 0 &amp;&amp; collision_line(x, y, gotoX, gotoY, objWall, false, true))
+{
+    var pathEnd;
+    pathEnd = path_get_number(myPath) - 1;
+    moveTo(path_get_x(myPath, pathEnd), path_get_y(myPath, pathEnd));
+}
+*/
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>
