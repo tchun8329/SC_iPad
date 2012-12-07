@@ -1,0 +1,15 @@
+Version 1.1 BETA
+
+First off - before installing this into GM, please uninstall V1.0! They are not compatible and it will not overwrite due to extension changes (this will not happen again in future versions).
+
+Some new commands have been added and two previous commands have been modified. "If Instance is Stuck" has been changed to "If Instance is Moving" (check the NOT box to tell if it isn't). A new "If Instance is Stuck" has been added that checks for an actual collision with solid objects. "If a Path Could Not Be Made" has been added, which checks to see if the path couldn't be created and returns true if so.
+
+The command to calculate a path has a new parameter, "update grid". This will remove/add tiles that the object was on. THIS IS NOT YET SUPPORTED. If you get it to work well, your probably lucky.
+
+Also, "Update Grid Collision" (or a name to that effect :P ) has been added, which will also remove/add tiles that the object was on and is to be used in every step. Again, not yet supported, and may have issues/not work well with calculating paths.
+
+If you do try the new grid updating system, you may find that nearby solids are removed, so you may want to add them back occasionally (eg. alarm). Also, as objects move they will not recalculate everyone's path, so you should do this when another object comes in range.
+
+The help files will be updated on V1.1 Final or later. The example has been slightly updated to show the new "path failure" command.
+
+-Airslide

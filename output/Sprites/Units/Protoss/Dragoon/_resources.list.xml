@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprDragoon" type="RESOURCE"/>
+  <resource name="sprDragoonWE" type="RESOURCE"/>
+  <resource name="sprDragoonWS" type="RESOURCE"/>
+  <resource name="sprDragoonWN" type="RESOURCE"/>
+  <resource name="sprDragoonIdle" type="RESOURCE"/>
+</resources>
